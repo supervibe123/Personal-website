@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+.env*
+!.env.example
+
+.DS_Store
+Thumbs.db
+
+# Keep the editable resume source local; the public site serves the reviewed PDF.
+James-Mills-Paquin-Resume.docx
