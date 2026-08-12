@@ -467,6 +467,33 @@
     text-transform: uppercase;
   }
 
+  .arsenal-copy {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(3rem, 8vw, 8rem);
+    border-top: 1px solid var(--rule);
+    padding-top: clamp(3rem, 5vw, 4.5rem);
+  }
+
+  .arsenal-project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .arsenal-project-details > p:first-child {
+    max-width: 36rem;
+    color: var(--ink-muted);
+    font-size: 1.02rem;
+  }
+
+  .arsenal-copy .project-note {
+    margin-top: 0;
+  }
+
   .project-note svg {
     width: 0.9rem;
   }
@@ -829,6 +856,11 @@
 
     .project-grid {
       gap: 4rem;
+    }
+
+    .arsenal-copy {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
     }
 
     .predictor-scene {

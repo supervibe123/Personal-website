@@ -1,4 +1,4 @@
-import { LockKeyhole } from "lucide-react";
+import { ExternalLink, LockKeyhole } from "lucide-react";
 
 import { Separator } from "@/components/ui/separator";
 import { LogoBrandsShowcase } from "@/components/logo-brands-showcase";
@@ -11,7 +11,7 @@ export function SelectedWork() {
         <header className="section-heading">
           <p className="eyebrow">Selected work</p>
           <h2>Applications, automation, and data interfaces.</h2>
-          <p>One internship case study and two recent independent builds.</p>
+          <p>One internship case study and three recent product builds.</p>
         </header>
 
         <article className="feature-case">
@@ -65,6 +65,29 @@ export function SelectedWork() {
         <Separator />
 
         <div className="project-grid">
+          <article className="project-copy arsenal-copy" id="arsenal">
+            <div>
+              <p className="eyebrow">Collaborative product · Active development</p>
+              <h3>Arsenal Solutions</h3>
+            </div>
+            <div className="arsenal-project-details">
+              <p>
+                Operations software for local government that helps small public organizations
+                assign ownership, move reviews and approvals forward, manage recurring work, and
+                keep clear completion records.
+              </p>
+              <p className="project-meta">TypeScript · React · Cloudflare Workers · D1</p>
+              <a
+                className="project-note"
+                href="https://arsenalsolutions.net"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Explore Arsenal Solutions <ExternalLink aria-hidden="true" />
+              </a>
+            </div>
+          </article>
+
           <article className="project-copy">
             <div>
               <p className="eyebrow">Personal project · Active prototype</p>
